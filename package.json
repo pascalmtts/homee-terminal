@@ -1,0 +1,35 @@
+{
+  "name": "homee-terminal",
+  "version": "1.0.0",
+  "description": "See homee websocket traffic",
+  "author": "Pascal Mattes",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@mdi/font": "^5.0.45",
+    "@nuxtjs/axios": "^5.9.5",
+    "crypto-js": "^4.0.0",
+    "is-ip": "^3.1.0",
+    "json-formatter-js": "^2.3.4",
+    "nuxt": "^2.0.0",
+    "vue-native-websocket": "^2.0.14",
+    "vuetify-toast-snackbar": "^0.6.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
