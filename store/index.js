@@ -11,10 +11,10 @@ export const state = () => ({
     isConnected: false,
     isConnecting: false,
     reconnectError: false,
-    reconnecting: false
+    reconnecting: false,
   },
   savedLogins: [],
-  messages: []
+  messages: [],
 })
 
 export const mutations = {
@@ -84,7 +84,7 @@ export const mutations = {
     state.homee.deviceId = ''
     state.connectData = {
       username: '',
-      password: ''
+      password: '',
     }
     state.messages = []
   },
@@ -107,7 +107,7 @@ export const mutations = {
     if (index !== -1) {
       state.savedLogins.splice(index, 1)
     }
-  }
+  },
 }
 
 export const actions = {
@@ -144,8 +144,8 @@ export const actions = {
         Authorization: `Basic ${btoa(
           connectData.username + ':' + passwordHash
         )}`,
-        'Content-Type': 'application/x-www-form-urlencoded'
-      }
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
     }
     try {
       const response = await this.$axios(authOptions)
@@ -165,7 +165,7 @@ export const actions = {
           id: state.homee.id,
           token: state.homee.token,
           user_id: responseParams.user_id,
-          device_id: responseParams.device_id
+          device_id: responseParams.device_id,
         })
       }
     } catch (e) {
@@ -191,7 +191,7 @@ export const actions = {
       console.warn(e)
       commit('SET_CONNECTING', false)
       Vue.prototype.$toast('Verbindung nicht möglich', {
-        color: 'error'
+        color: 'error',
       })
       return
     }
@@ -231,7 +231,7 @@ export const actions = {
         console.info(e)
       }
     }
-  }
+  },
 }
 
 export const getters = {
@@ -258,5 +258,5 @@ export const getters = {
   },
   savedLogins: (state) => {
     return state.savedLogins
-  }
+  },
 }

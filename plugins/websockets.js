@@ -37,7 +37,7 @@ export default ({ store }, inject) => {
           }
         }
         this.store[method](target, msg)
-      }
+      },
     })
   })
   inject('wsConnect', (homeeid, token) => {

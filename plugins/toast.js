@@ -5,5 +5,5 @@ Vue.use(VuetifyToast, {
   x: 'middle',
   showClose: true,
   closeColor: 'white',
-  closeIcon: 'mdi-close'
+  closeIcon: 'mdi-close',
 })

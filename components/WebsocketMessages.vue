@@ -26,7 +26,7 @@ import JSONFormatter from 'json-formatter-js'
 export default {
   data() {
     return {
-      wsmessage: ''
+      wsmessage: '',
     }
   },
   computed: {
@@ -35,12 +35,12 @@ export default {
     },
     connected() {
       return this.$store.getters.connected
-    }
+    },
   },
   watch: {
     messages() {
       this.getMessages()
-    }
+    },
   },
   mounted() {
     this.getMessages()
@@ -53,7 +53,7 @@ export default {
       }
       for (let i = this.messages.length - 1; i >= 0; i--) {
         const formatter = new JSONFormatter(this.messages[i].message, 4, {
-          theme: 'dark'
+          theme: 'dark',
         })
         const newDiv = document.createElement('div')
         newDiv.className = 'message'
@@ -67,8 +67,8 @@ export default {
     },
     sendMessage() {
       this.$store.dispatch('sendMessage', this.wsmessage)
-    }
-  }
+    },
+  },
 }
 </script>
 

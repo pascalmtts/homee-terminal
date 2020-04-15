@@ -136,7 +136,7 @@ import WebsocketMessages from '~/components/WebsocketMessages.vue'
 
 export default {
   components: {
-    WebsocketMessages
+    WebsocketMessages,
   },
   mixins: [heartbeat],
   data() {
@@ -146,8 +146,8 @@ export default {
         id: undefined,
         username: undefined,
         password: undefined,
-        note: ''
-      }
+        note: '',
+      },
     }
   },
   computed: {
@@ -156,8 +156,8 @@ export default {
       'connecting',
       'reconnecting',
       'closeReason',
-      'savedLogins'
-    ])
+      'savedLogins',
+    ]),
   },
   watch: {
     connected() {
@@ -166,7 +166,7 @@ export default {
         this.$store.commit('SET_CONNECTING', false)
         this.fab = false
         this.$toast('Verbindung hergestellt', {
-          color: 'success'
+          color: 'success',
         })
         try {
           if (this.$refs.connectForm) {
@@ -180,25 +180,25 @@ export default {
         switch (this.closeReason) {
           case 'CLEAN':
             this.$toast('Verbindung getrennt', {
-              color: 'error'
+              color: 'error',
             })
             break
           case 'TOKEN_INVALID':
             this.$toast(
               'Der Token ist nicht mehr gültig. Bitte verbinde dich erneut',
               {
-                color: 'error'
+                color: 'error',
               }
             )
             break
           case 'SERVICE_RESTART':
             this.$toast('homee wird neugestartet', {
-              color: 'warning'
+              color: 'warning',
             })
             break
           default:
             this.$toast('Verbindung verloren.', {
-              color: 'error'
+              color: 'error',
             })
             break
         }
@@ -207,13 +207,13 @@ export default {
     reconnecting() {
       if (this.reconnecting) {
         this.$toast('Verbindung wird wiederhergestellt', {
-          color: 'warning'
+          color: 'warning',
         })
       }
     },
     savedLogins(value) {
       localStorage.setItem('savedLogins', JSON.stringify(value))
-    }
+    },
   },
   beforeCreate() {
     this.$store.commit('INITIALIZE_SAVED_LOGINS')
@@ -241,7 +241,7 @@ export default {
         connectData = this.connectData
       }
       this.$store.dispatch('authenticate', connectData)
-    }
-  }
+    },
+  },
 }
 </script>
