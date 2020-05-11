@@ -23,10 +23,6 @@ export default {
    ** Customize the progress-bar color
    */
   loading: false,
-
-  router: {
-    base: '/homee-terminal/',
-  },
   /*
    ** Global CSS
    */
