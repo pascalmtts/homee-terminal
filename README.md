@@ -2,6 +2,8 @@
 
 > See homee websocket traffic
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ab8751e-8e49-48e5-824d-e39fe2df09e2/deploy-status)](https://app.netlify.com/sites/zen-jang-ae7597/deploys)
+
 ## Build Setup
 
 ``` bash
