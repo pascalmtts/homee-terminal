@@ -114,7 +114,7 @@
               @click="authenticate()"
             >
               Verbinden
-              <template v-slot:loader>
+              <template #loader>
                 <v-progress-circular
                   :size="25"
                   indeterminate
