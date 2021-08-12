@@ -17,7 +17,7 @@
     "crypto-js": "4.1.1",
     "is-ip": "3.1.0",
     "json-formatter-js": "2.3.4",
-    "nuxt": "2.15.7",
+    "nuxt": "2.15.8",
     "vue-native-websocket": "2.0.15",
     "vuetify-toast-snackbar": "0.6.1"
   },
