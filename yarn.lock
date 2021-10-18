@@ -1298,10 +1298,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@mdi/font@6.1.95":
-  version "6.1.95"
-  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-6.1.95.tgz#665b7dc13b2d1d1ebefcfac5a68c1013581aaa96"
-  integrity sha512-L3cg9qoUEp5MZHvu6rtuobTtPBmq0ATau5ZrHmsaE6gCRs90T4JBWyzV8WCMEjZoy5+zA+/cvtCUtD/+WVaQ9Q==
+"@mdi/font@6.3.95":
+  version "6.3.95"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-6.3.95.tgz#5e22e0626ec652028a19aa541a20b28280399dd9"
+  integrity sha512-bbvnF7rNX9aMn7PeqDCa8ZQTPxEqerZeXo/lQQxE84Ka/7UrFcqvOO3XXVLtrCCtyA6uIqiG4oYFRPVJqv247Q==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
