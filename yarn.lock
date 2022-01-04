@@ -5319,10 +5319,10 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-ip-regex@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-4.1.0.tgz#5ad62f685a14edb421abebc2fff8db94df67b455"
-  integrity sha512-pKnZpbgCTfH/1NLIlOduP/V+WRXzC2MOz3Qo8xmxk8C5GudJLgK5QyLVXOSWy3ParAH7Eemurl3xjv/WXYFvMA==
+ip-regex@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-5.0.0.tgz#cd313b2ae9c80c07bd3851e12bf4fa4dc5480632"
+  integrity sha512-fOCG6lhoKKakwv+C6KdsOnGvgXnmgfmp0myi3bcNwj3qfwPAxRKWEuFhvEFF7ceYIz6+1jRZ+yguLFAmUNPEfw==
 
 ip@^1.1.5:
   version "1.1.5"
@@ -5525,12 +5525,12 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
-is-ip@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/is-ip/-/is-ip-3.1.0.tgz#2ae5ddfafaf05cb8008a62093cf29734f657c5d8"
-  integrity sha512-35vd5necO7IitFPjd/YBeqwWnyDWbuLH9ZXQdMfDA8TEo7pv5X8yfrvVO3xbJbLUlERCMvf6X0hTUamQxCYJ9Q==
+is-ip@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/is-ip/-/is-ip-4.0.0.tgz#8e9eae12056bf46edafad19054dcc3666a324b3a"
+  integrity sha512-4B4XA2HEIm/PY+OSpeMBXr8pGWBYbXuHgjMAqrwbLO3CPTCAd9ArEJzBUKGZtk9viY6+aSfadGnWyjY3ydYZkw==
   dependencies:
-    ip-regex "^4.0.0"
+    ip-regex "^5.0.0"
 
 is-negative-zero@^2.0.1:
   version "2.0.1"
