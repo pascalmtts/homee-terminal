@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import CryptoJS from 'crypto-js'
-import IsIP from 'is-ip'
 
 export const state = () => ({
   homee: {
@@ -124,11 +123,9 @@ export const actions = {
       return
     }
     let connectString
-    // Check if ip or id
+    // Check if id
     if (connectData.id.substr(0, 3) === '000') {
       connectString = 'https://' + connectData.id + '.hom.ee/access_token'
-    } else if (IsIP(connectData.id)) {
-      connectString = 'http://' + connectData.id + ':7681/access_token'
     } else {
       throw new Error('Invalid homee ID')
     }
@@ -138,8 +135,7 @@ export const actions = {
       method: 'POST',
       url: connectString,
       timeout: 4000,
-      data:
-        'device_hardware_id=123456&device_name=homee terminal&device_os=5&device_type=4',
+      data: 'device_hardware_id=123456&device_name=homee terminal&device_os=5&device_type=4',
       headers: {
         Authorization: `Basic ${btoa(
           connectData.username + ':' + passwordHash

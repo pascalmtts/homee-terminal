@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueNativeSock from 'vue-native-websocket'
-import IsIP from 'is-ip'
 
 export default ({ store }, inject) => {
   inject('wsInitialize', () => {
@@ -43,18 +42,10 @@ export default ({ store }, inject) => {
   inject('wsConnect', (homeeid, token) => {
     const vm = new Vue()
     let connectString
-    // Check if ip or id
+    // Check if id
     if (homeeid.substr(0, 3) === '000') {
       connectString =
         'wss://' + homeeid + '.hom.ee/connection?access_token=' + token
-    } else if (IsIP(homeeid)) {
-      connectString =
-        'ws://' + homeeid + ':7681/connection?access_token=' + token
-    } else if (homeeid.length <= 3) {
-      if (!isNaN(homeeid) && homeeid <= 255) {
-        connectString =
-          'ws://10.11.11.' + homeeid + ':7681/connection?access_token=' + token
-      }
     } else {
       return
     }
